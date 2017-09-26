@@ -7,6 +7,7 @@ namespace Advise.HarvestConnect.Events
     public class HarvestSuccessfulLoginContext
     {
         public HarvestWhoAmIResponse WhoAmI { get; set; }
+        public string WhoAmIRaw { get; set; }
         public ClaimsIdentity Identity { get; set; }
         public string AccessToken { get; set; }
         public string RefreshToken { get; set; }

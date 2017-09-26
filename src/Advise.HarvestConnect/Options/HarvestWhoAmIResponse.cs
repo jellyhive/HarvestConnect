@@ -53,6 +53,5 @@ namespace Advise.HarvestConnect.Options
     {
         public Company company { get; set; }
         public User user { get; set; }
-        public string RawResponse { get; set; }
     }
 }

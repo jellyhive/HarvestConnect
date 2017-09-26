@@ -62,7 +62,6 @@ namespace Advise.HarvestConnect
                             await Client.GetAsync(string.Format(UserInformationEndpointPattern, context.AccessToken));
                         var body = await response.Content.ReadAsStringAsync();
                         var whoAmI = JsonConvert.DeserializeObject<HarvestWhoAmIResponse>(body);
-                        whoAmI.RawResponse = body;
 
                         var callback = harvestOptions.Events?.OnSuccessfulLogin;
 
@@ -74,6 +73,7 @@ namespace Advise.HarvestConnect
                                 Identity = context.Identity,
                                 RefreshToken = context.RefreshToken,
                                 WhoAmI = whoAmI,
+                                WhoAmIRaw = body,
                                 ExpiresIn = context.ExpiresIn
                             });
                         }
