@@ -8,6 +8,11 @@
     <Product>Harvest connect</Product>
     <Description>Helper for authenticating via Harvest (https://www.getharvest.com)</Description>
     <Copyright>Advise Solutions i Göteborg AB</Copyright>
+    <PackageReleaseNotes>https://github.com/AdviseSolutions/HarvestConnect/releases</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/AdviseSolutions/HarvestConnect</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/AdviseSolutions/HarvestConnect/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/AdviseSolutions/HarvestConnect</PackageProjectUrl>
+    <PackageTags>harvest harvestapp harvestapi harvesthq timetracking oauth</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
