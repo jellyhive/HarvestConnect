@@ -1,10 +1,12 @@
 # Harvest connect
 Helper for authenticating via Harvest (https://www.getharvest.com)
 
+[![NuGet](https://img.shields.io/nuget/v/HarvestConnect.svg)](https://www.nuget.org/packages/HarvestConnect)
+
 ## How to use?
 
 1. Register a OAuth client over at https://\<YOURACCOUNT\>.harvestapp.com/oauth2_clients
-1. Install clone this repo and include it in your project.
+1. Install from Nuget: ``> dotnet add package HarvestConnect`` .
 1. Use the code below to set it up.
 
 ```csharp
